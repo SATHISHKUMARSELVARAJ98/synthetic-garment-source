@@ -1,0 +1,20 @@
+dataset:
+  name: garment_orders
+  version: "1.0.0"
+  seed: 42
+
+generation:
+  style_count: 100
+  supplier_count: 50
+  record_count: 1000
+  start_date: "2025-01-01"
+  end_date: "2026-12-31"
+  output_format: all
+  batch_size: 5000
+  currency: INR
+
+paths:
+  output_dir: data/generated
+  master_dir: data/master
+  faults_dir: data/faults
+  schema_drift_dir: data/schema_drift
